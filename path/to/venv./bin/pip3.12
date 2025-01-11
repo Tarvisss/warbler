@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/tarvis/Documents/springboard_bootcamp/twitterclone/twitter-help/twitter-clone-047f97757e7e4b01a215462091a9cec4/path/to/venv./bin/python3 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
